@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html {
+    background-color: #242424;
+    font-family: Roboto,Arial,sans-serif;
+    animation: fadein 1s;
+}
+
+body {
+    width:100%;
+    text-align: center;
+    color:white;
+}
+
+body p{
+    animation-name:text;
+    animation-duration: 1s;
+}
+
+@keyframes text{
+    0%{opacity:0;}
+    25%{padding-top:50px;}
+    50%{padding-bottom:70px;}
+    100%{padding-bottom:0px;}
+}
+
+header {
+    color:white;
+
+}
+
+header h1{
+    font-size:50px;
+    animation-name: title;
+    animation-duration: 1s;
+}
+
+main {
+    text-align: center;
+    position:relative;
+}
+
+.dot {
+    border-radius: 25px;
+    margin-left:50%;
+    text-align: center;
+    width:20px;
+    height:20px;
+    opacity:1;
+    background-color:white;
+    animation-name:dots;
+    animation-duration: 1s;
+}
+
+@keyframes dots {
+    0%{opacity:0;width:20px;height:20px;margin-left:0px;}
+    25% {opacity:0.25;width:30px;height:30px;}
+    50% {opacity:0.5;width:20px;height:20px;margin-left:50%;}
+    75% {opacity:0.75;width:25px;height:25px;margin-left:49.9%}
+    100% {opacity:1;width:20px;height:20px;}
+}
+
+@keyframes title {
+    from {font-size:0px;opacity:0;}
+    to {font-size:50px;opacity:1;}
+}
+
+.line {
+    background-color:white;
+    width:40%;
+    height:5px;
+    margin-left:30%;
+    animation-name:line;
+    animation-duration: 1s;
+}
+
+@keyframes line {
+    0% {margin-left:0%;opacity:0;width:20%}
+    40% {opacity:50%;margin-left:70%;width:1%}
+    100% {opacity:1;width:40%}
+}
